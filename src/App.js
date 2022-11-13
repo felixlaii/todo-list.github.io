@@ -23,6 +23,11 @@ const App = () => {
       setTodo("");
       return;
     }
+
+    if(todo !== "") {
+      setTodos([{ id: `${todo}-${Date.now()}`, todo }, ...todos]);
+      setTodo("");
+    }
   };
   return <div className="App"></div>;
 };
