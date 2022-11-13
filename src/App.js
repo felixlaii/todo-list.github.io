@@ -11,19 +11,20 @@ const App = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if(editId) {
+    if (editId) {
       const editTodo = todos.find((i) => i.id === editId);
-      const updatedTodos = todos.map((t) => t.id === editTodo.id ? (t = { id: t.id, todo}) : {id: t.id, todo: t.id});
+      const updatedTodos = todos.map((t) =>
+        t.id === editTodo.id
+          ? (t = { id: t.id, todo })
+          : { id: t.id, todo: t.id }
+      );
       setTodos(updatedTodos);
       setEditId(0);
       setTodo("");
       return;
     }
-  }
-  return (
-    <div className="App">
-    </div>
-  );
-}
+  };
+  return <div className="App"></div>;
+};
 
 export default App;
