@@ -51,6 +51,11 @@ const App = () => {
           editId={editId}
           setTodo={setTodo}
         />
+             <TodoList
+          todos={todos}
+          handleEdit={handleEdit}
+          handleDelete={handleDelete}
+        />
 </div>
   </div>;
   )
