@@ -16,3 +16,9 @@
   font-size: 20px;
   color: white;
 }
+
+.todoForm {
+  display: flex;
+  justify-content: space-around;
+  width: 450px;
+}
