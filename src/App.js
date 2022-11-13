@@ -24,7 +24,7 @@ const App = () => {
       return;
     }
 
-    if(todo !== "") {
+    if (todo !== "") {
       setTodos([{ id: `${todo}-${Date.now()}`, todo }, ...todos]);
       setTodo("");
     }
@@ -42,23 +42,23 @@ const App = () => {
   };
 
   return (
-  <div className="App">
-<div className="container">
-  <h1>Todo List</h1>
-  <TodoForm
+    <div className="App">
+      <div className="container">
+        <h1>Todo List</h1>
+        <TodoForm
           handleSubmit={handleSubmit}
           todo={todo}
           editId={editId}
           setTodo={setTodo}
         />
-             <TodoList
+        <TodoList
           todos={todos}
           handleEdit={handleEdit}
           handleDelete={handleDelete}
         />
-</div>
-  </div>;
-  )
+      </div>
+    </div>
+  );
 };
 
 export default App;
