@@ -33,6 +33,10 @@ const App = () => {
   const handleDelete = (id) => {
     const delTodo = todos.filter((to) => to.id !== id);
     setTodos([...delTodo]);
+  };
+
+  const handleEdit = (id) => {
+    const editTodo = todos.find((i) => i.id === id);
   }
   return <div className="App"></div>;
 };
