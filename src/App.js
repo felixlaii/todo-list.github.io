@@ -37,6 +37,8 @@ const App = () => {
 
   const handleEdit = (id) => {
     const editTodo = todos.find((i) => i.id === id);
+    setTodo(editTodo.todo);
+    setEditId(id);
   }
   return <div className="App"></div>;
 };
