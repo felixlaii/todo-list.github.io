@@ -45,6 +45,12 @@ const App = () => {
   <div className="App">
 <div className="container">
   <h1>Todo List</h1>
+  <TodoForm
+          handleSubmit={handleSubmit}
+          todo={todo}
+          editId={editId}
+          setTodo={setTodo}
+        />
 </div>
   </div>;
   )
