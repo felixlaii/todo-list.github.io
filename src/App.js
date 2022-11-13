@@ -39,8 +39,15 @@ const App = () => {
     const editTodo = todos.find((i) => i.id === id);
     setTodo(editTodo.todo);
     setEditId(id);
-  }
-  return <div className="App"></div>;
+  };
+
+  return (
+  <div className="App">
+<div className="container">
+  <h1>Todo List</h1>
+</div>
+  </div>;
+  )
 };
 
 export default App;
