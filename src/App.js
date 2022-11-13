@@ -29,6 +29,11 @@ const App = () => {
       setTodo("");
     }
   };
+
+  const handleDelete = (id) => {
+    const delTodo = todos.filter((to) => to.id !== id);
+    setTodos([...delTodo]);
+  }
   return <div className="App"></div>;
 };
 
